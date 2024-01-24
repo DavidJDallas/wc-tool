@@ -20,6 +20,12 @@ Run the following in your CLI:
 
 ``chmod +x wordcountscript.js``
 
+To enable using it without the .js, you can use the following CLI command: 
+
+``sudo ln -s $(pwd)/ccwc.js /usr/local/bin/ccwc``
+
+
+
 
 
 
