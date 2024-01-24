@@ -1,5 +1,5 @@
 # wc-tool
-This is a coding challenge from John Crickett's coding challenges blog. It's a script that functions the same as the wc tool in any Unix-based OS.It currently is 
+This is a coding challenge from John Crickett's coding challenges blog. It's a script that functions the same as the wc tool in any Unix-based OS. Just started today and currently just works for byte counting, which you can use by denoting -c in the CLI. How to run in depth is explicated below. 
 
 ## Setting up
 
@@ -23,6 +23,14 @@ Run the following in your CLI:
 To enable using it without the .js, you can use the following CLI command: 
 
 ``sudo ln -s $(pwd)/ccwc.js /usr/local/bin/ccwc``
+
+Then you can navigate to your desired file where you would like the tool to operate on, and run 
+
+``wordcountscript -c [filename]``
+
+If you haven't enabled the script to be run without .js, i.e. you haven't followed the second step of this section, simply remove add '.js' to the end of wordcountscript:
+
+``wordcountscript.js -c [filename]``
 
 
 
