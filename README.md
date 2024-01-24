@@ -3,4 +3,5 @@ This is a coding challenge from John Crickett's coding challenges blog. It's a s
 
 ## Setting up
 
-Run using either node.js or bun. To install Node, go [here]https://nodejs.org/en/download. To install Bun, visit [here]https://bun.sh/docs/installation.
+Run using either Node.js or Bun. To install Node.js, go [here](https://nodejs.org/en/download). To install Bun, visit [here](https://bun.sh/docs/installation).
+
