@@ -1,12 +1,11 @@
 #!/usr/bin/env bun
 
 const fs = require('fs');
-const readline = require('readline');
 
 const countBytes = (filePath) => {
     try {
         const content = fs.readFileSync(filePath);
-        return content.length;
+        console.log(content.length);
     } catch (error) {
         console.error(`Error reading file: ${error.message}`);
         return 0;
@@ -35,11 +34,21 @@ const countWords = (filePath) => {
         const content = fs.readFileSync(filePath, 'utf-8');
         const splitText = content.split(/\s+|\r?\n|\r|\t/);
         const removeEmptyStrings = splitText.filter((word) => word.length > 0);
-        return removeEmptyStrings.length
+        console.log(removeEmptyStrings.length)
 
     } catch(error){
         console.error(`Error reading file: ${error.message}`)
         return 0
+    }
+}
+
+const countCharacters = (filePath) => {
+    try{
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const splitText = content.split("");
+        console.log(splitText.length);
+    } catch(error){
+
     }
 }
 
@@ -49,7 +58,8 @@ const returnValue = () => {
     const mapper = {
     '-c': countBytes(cliContent[1]),
     '-l': countLines(cliContent[1]),
-    '-w': countWords(cliContent[1])
+    '-w': countWords(cliContent[1]),
+    '-m': countCharacters(cliContent[1])
 }
 
     return mapper[cliContent[1]]
