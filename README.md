@@ -1,5 +1,5 @@
 # wc-tool
-This is a coding challenge from John Crickett's coding challenges blog. It's a script that functions the same as the wc tool in any Unix-based OS. Just started today and currently just works for byte counting, which you can use by denoting -c in the CLI. How to run in depth is explicated below. 
+This is a coding challenge from John Crickett's coding challenges blog. It's a script that functions the same as the wc tool in any Unix-based OS. Just started yesterday and currently works for counting bytes and counting line numbers, which you can use by denoting -c and -l in the CLI, respectively. How to run in depth is explicated below. 
 
 ## Setting up
 
@@ -11,6 +11,8 @@ Locate yourself in the correct folder that you have stored the script and run ei
 
 node wordcountscript.js -c test.txt
 bun wordcountscript.js -c test.txt
+
+or -l instead of -c for counting lines.
 
 Obviously this does not really have much practical value, since it can only read files in the same folder as the script. To be able to use through your cli as a more useful script see below.
 
@@ -31,6 +33,8 @@ Then you can navigate to your desired file where you would like the tool to oper
 If you haven't enabled the script to be run without .js, i.e. you haven't followed the second step of this section, simply remove add '.js' to the end of wordcountscript:
 
 ``wordcountscript.js -c [filename]``
+
+Replace -c with -l if you would like the lines counted instead. 
 
 
 
